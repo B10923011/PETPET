@@ -82,6 +82,34 @@ a:hover {
   margin-top: 2px;
 }
 
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.pt50 {
+  padding-top: 50px;
+}
+
 .h80 {
   height: 80px;
 }
@@ -133,15 +161,21 @@ a:hover {
   z-index: 10;
 }
 
+.navbar-collapse {
+  flex-grow: 0;
+}
+
 .nav-item {
   margin: 20px auto;
   list-style-type: none;
 }
-.nav-item .nav-link {
-  color: #772400;
+
+.nav-link {
+  color: #772400 !important;
 }
-.nav-item .nav-link:hover {
-  color: #F0AD25;
+
+.nav-link:hover {
+  color: #F0AD25 !important;
 }
 
 .s1 {
@@ -156,8 +190,14 @@ a:hover {
   color: #772400;
   padding-left: 30px;
 }
+.s1-content .option {
+  display: flex;
+}
 .s1-content h2 {
+  margin-left: auto;
+  margin-right: auto;
   font-size: 24px;
+  word-wrap: break-word;
 }
 .s1-content .searchBtn {
   background-color: #D54100;
@@ -168,6 +208,43 @@ a:hover {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .s1 .d-flex {
+    flex-direction: column;
+  }
+  .s1 img {
+    width: 100%;
+    height: 500px;
+  }
+
+  .s1-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
+  }
+  .s1-content .option {
+    flex-direction: column;
+    width: 100%;
+  }
+  .s1-content .option .dropdown {
+    width: 100%;
+  }
+  .s1-content .option .btn {
+    width: 100%;
+    border-radius: 4px;
+  }
+  .s1-content h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .s1-content h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .s1-content .dropdown {
+    justify-content: center;
+  }
+}
 .s2 .slide {
   display: flex;
   justify-content: space-between;
@@ -262,6 +339,15 @@ a:hover {
   background-image: url(../images/index-3.jpeg);
 }
 
+@media (max-width: 768px) {
+  .s3 .feature {
+    flex-direction: column;
+  }
+  .s3 .feature-item {
+    width: 345px !important;
+    height: 135px !important;
+  }
+}
 .s4 {
   height: 584px;
   object-fit: contain;
@@ -278,7 +364,20 @@ a:hover {
 .s4 p {
   color: white;
 }
+.s4 .data {
+  display: flex;
+  flex-direction: column;
+}
 
+@media (max-width: 768px) {
+  .s4 {
+    height: auto;
+  }
+  .s4 .data {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .s6 input {
   width: 380px;
   border: 1px #CED4DA solid;
@@ -291,6 +390,11 @@ a:hover {
   padding-bottom: 36px;
 }
 
+@media (max-width: 768px) {
+  .s6 input {
+    width: 245px;
+  }
+}
 footer h3 {
   font-size: 20px;
   margin-top: 18px;
