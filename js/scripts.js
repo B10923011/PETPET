@@ -4,7 +4,7 @@ let footer = document.getElementsByClassName('footer');
 let logo = document.getElementsByClassName('logo');
 
 // 初始化元素的顯示狀態
-if (localStorage.getItem('windowWidth') < 768) {
+if (localStorage.getItem('windowWidth') < 1230) {
     s1_title[0].style.display = 'none';
     s1_sm_title[0].style.display = 'block';
     footer[0].style.display = 'none';

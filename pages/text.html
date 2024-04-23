@@ -1,0 +1,631 @@
+.ins-preview-wrapper {
+font-family: "Insider-Open Sans", sans-serif;
+-webkit-font-smoothing: antialiased;
+text-size-adjust: 100%;
+text-rendering: optimizeLegibility;
+line-height: normal;
+text-transform: none;
+letter-spacing: normal;
+font-size: 16px;
+margin: unset;
+}
+div{
+font-size: 16px;
+line-height: 22px;
+}
+.ins-preview-wrapper select,
+.ins-preview-wrapper label,
+.ins-preview-wrapper input {
+font-family: inherit;
+line-height: normal;
+text-transform: none;
+letter-spacing: normal;
+}
+@media screen and (min-width: 480px) and (orientation:landscape) {
+.ins-preview-wrapper:not([data-camp-id='0']),
+#ins-frameless-overlay:not([data-camp-id='0']) {
+display: #{{Prevent Landscape}} !important;
+}
+}
+
+.ins-adaptive-button-container.copied {
+background-color: #515252 !important;
+}
+
+.ins-prevent-landscape-variable {
+display: none;
+}
+
+/*question container*/
+.ins-preview-wrapper .ins-content-wrapper .ins-notification-content {
+border-radius: 16px!important;
+box-shadow: 0 3px 5px rgba(0,0,0,.1);
+background-position: center center !important;
+background-repeat: no-repeat !important;
+}
+
+div#ins-survey-questionnaire {
+width: 290px;
+min-height: 200px;
+background-size: 100% 100%;
+border-radius: 16px !important;
+}
+
+.ins-slider {
+overflow: hidden;
+}
+/*question container*/
+
+/*page*/
+.ins-slider-container {
+overflow: hidden;
+-webkit-transition: transform 0.5s ease;
+-moz-transition: transform 0.5s ease-in;
+-ms-transition: transform 0.5s ease-in;
+-o-transition: transform 0.5s ease-in;
+transition: transform 0.5s ease-in;
+}
+
+.ins-survey-welcome-page-wrapper {
+width: 100%;
+}
+
+.ins-survey-page-inner-wrapper .ins-survey-image {
+text-align: center;
+width: 50px;
+height: 50px;
+margin: 0 auto;
+overflow: hidden;
+display: #{{Survey Image}};
+}
+
+.ins-survey-page-inner-wrapper .ins-survey-image img {
+width: 100%;
+height: 100%;
+object-fit: inherit;
+}
+
+.ins-element-content.no-resizable.change-image .ins-element-link {
+object-fit: inherit;
+}
+
+.ins-slider-page {
+float: left;
+width: 100%;
+}
+
+.ins-survey-page-inner-wrapper {
+padding: 20px;
+}
+
+.ins-element-question > .ins-element-content {
+text-align: center;
+}
+
+.ins-element-question > .ins-element-content .ins-survey-selection-container {
+text-align: start;
+}
+/*page*/
+
+/*single choose*/
+.ins-survey-question-text {
+font-family: inherit;
+font-size: 12px;
+font-weight: 600;
+text-align: center;
+color: #31313c;
+margin: 20px 0px;
+cursor: default!important;
+line-height: 1!important;
+}
+/*single choose*/
+
+
+/*close button*/
+div[id^="wrap-close-button"] {
+position: absolute;
+z-index: 1;
+top: 6px;
+right: 3px;
+display: #{{Close Button}};
+}
+
+.ins-element-close-button .ins-element-content {
+color: #979797;
+cursor: pointer;
+font-size: 28px;
+line-height: 28px;
+width: 28px;
+font-family: Arial, sans-serif;
+text-align: center;
+}
+/*close button*/
+
+
+
+/* Begin: Wrapper shadow */
+.ins-notification-content:before,
+.ins-notification-content:after{
+content: "";
+position: absolute;
+height: 100%;
+border-radius: 16px !important;
+box-shadow: 0 3px 5px rgba(0,0,0,.1);
+}
+
+.ins-notification-content:before {
+top: 8px;
+z-index: -1;
+background-color: inherit;
+width: 90%;
+left: 5%;
+opacity: 0.9;
+}
+
+.ins-notification-content:after {
+top: 15px;
+z-index: -2;
+width: 80%;
+background-color: inherit;
+left: 10%;
+opacity: 0.8;
+}
+/* End: Wrapper shadow */
+
+
+.ins-survey-selection-container{
+max-height: 240px;
+overflow-y: auto;
+padding-bottom: 2px;
+}
+
+/* Begin: Checkbox & Radio buttons */
+.ins-survey-selection-row{
+position: relative;
+border: 1px solid rgba(0, 0, 0, 0.1);
+z-index: 1;
+margin-bottom: -1px;
+transition: border .25s linear;
+display: flex !important;
+align-items: center;
+}
+
+.ins-survey-selection-row:hover span.ins-radio-button,
+.ins-survey-selection-row:hover span.ins-checkbox-button{
+border-color: #bfbfbf;
+}
+
+.ins-survey-selection-row.ins-survey-selection-checked{
+border: 1px solid #4eb9f6;
+z-index: 2;
+}
+
+.ins-survey-selection-row label{
+padding: 10px 40px;
+display: block;
+color:#767575;
+z-index: 10;
+position: relative;
+user-select: none;
+margin-bottom: 0 !important;
+flex-grow: 1;
+max-width: 100%;
+}
+
+.ins-survey-selection-row span.ins-radio-button,
+.ins-survey-selection-row .ins-checkbox-button{
+display: block;
+position: absolute;
+border: 1px solid #e6e6e6;
+border-radius: 100% !important;
+height: 20px;
+width: 20px;
+left: 10px;
+z-index: 5;
+transition: border .25s linear;
+background: transparent;
+padding: 0;
+}
+
+.ins-survey-selection-row span.ins-radio-button:before {
+display: block;
+position: absolute;
+content: "";
+border-radius: 100% !important;
+height: 16px;
+width: 16px;
+top: 1px;
+left: 1px;
+margin: auto;
+transition: background 0.25s linear;
+border: none;
+background: transparent;
+}
+
+.ins-survey-selection-checked span.ins-radio-button {
+border: 1px solid #4eb9f6 !important;
+}
+
+.ins-survey-selection-checked span.ins-radio-button:before{
+background: #4eb9f6;
+}
+
+.ins-survey-selection-row .ins-checkbox-button{
+border-radius: 3px !important;
+}
+
+.ins-survey-selection-row .ins-checkbox-button:after,
+.ins-survey-selection-row .ins-checkbox-button:before{
+display: block;
+position: absolute;
+content: "";
+transition: all 0.20s linear;
+border-radius: 2px !important;
+opacity: 0;
+}
+
+.ins-survey-selection-row .ins-checkbox-button:before {
+height: 10px;
+width: 2px;
+top: 4px;
+left: 10px;
+transform: rotate(45deg);
+}
+
+.ins-survey-selection-row .ins-checkbox-button:after {
+height: 6px;
+width: 2px;
+top: 8px;
+left: 5px;
+transform: rotate(-45deg);
+}
+
+.ins-survey-selection-checked .ins-checkbox-button {
+border: 1px solid #4eb9f6 !important;
+}
+
+.ins-survey-selection-checked .ins-checkbox-button:before,
+.ins-survey-selection-checked .ins-checkbox-button:after{
+background: #4eb9f6;
+opacity: 1;
+}
+
+.ins-survey-selection-row input[type=radio],
+.ins-survey-selection-row input[type=checkbox]{
+visibility: hidden;
+position: absolute;
+}
+
+.ins-survey-selection-row .ins-element-content {
+word-wrap: break-word;
+}
+/*End: Checkbox & Radio buttons */
+
+/* Button */
+.ins-element-wrap .ins-element-content.ins-adaptive-button-container{
+background-color: #4eb9f6;
+border-radius: 50px !important;
+font-size: 18px;
+}
+
+.ins-element-wrap .ins-element-content.ins-adaptive-button-container a {
+text-decoration: inherit;
+display: inline-block;
+padding: 10px 10px;
+font-size: inherit;
+text-decoration: inherit;
+overflow: hidden;
+white-space: nowrap;
+border: initial;
+}
+
+.ins-adaptive-button-flex .ins-element-wrap .ins-element-content.ins-adaptive-button-container {
+border-radius: 0 !important;
+box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ins-adaptive-button-flex .ins-element-wrap:first-child .ins-element-content.ins-adaptive-button-container {
+background-color: #ffffff;
+color: #979797;
+overflow: hidden;
+}
+
+.ins-adaptive-button-flex .ins-element-wrap:last-child .ins-element-content.ins-adaptive-button-container {
+background-color: #4eb9f6;
+}
+
+.ins-adaptive-button-container-fixed{
+box-sizing: border-box;
+width: 100%;
+}
+
+.ins-adaptive-button-fixed{
+margin-top: 20px;
+display: inline-block !important;
+}
+
+.ins-preview-wrapper .ins-adaptive-button {
+width: 100%;
+}
+
+.ins-preview-wrapper .ins-adabtive-btn-default,
+.ins-preview-wrapper .ins-adabtive-btn-primary{
+border-radius: 3px !important;
+box-sizing: border-box;
+padding: 17px 25px ;
+font-size: 14px;
+line-height: 14px;
+display: block;
+}
+
+.ins-adaptive-button-flex{
+display: flex !important;
+justify-content: space-between;
+flex-direction: column-reverse;
+}
+
+.ins-adaptive-button-flex .ins-element-wrap{
+width: 100%
+}
+.ins-adaptive-button-container {
+color : #fff ;
+}
+.ins-adaptive-button-container a, .ins-adaptive-button-container a:hover,.ins-adaptive-button {
+color: inherit;
+}
+.ins-survey-coupon-code{
+border: dashed 2px #dadada;
+padding: 3px 3px;
+display: block;
+text-align: center;
+font-weight: 700;
+color: #383f47;
+}
+
+.ins-question-title{
+font-size: 14px;
+text-align: center;
+max-height: 150px;
+overflow: hidden;
+font-weight: 600;
+color: #31313c;
+}
+
+/* Inputs & textarea & select */
+
+.ins-survey-datepicker{
+border: solid 1px #d4d6d4;
+width: 100%;
+height: 45px;
+position: relative;
+border-radius: 3px !important;
+}
+
+.ins-survey-datepicker input{
+width: 100%;
+height: 44px;
+padding: 0 15px;
+font-size: 16px;
+background-color: transparent;
+color:#555;
+border: 0;
+outline: none!important;
+border-radius: 3px !important;
+box-sizing: border-box;
+}
+
+.ins-survey-datepicker ::-webkit-inner-spin-button {
+display: none;
+}
+
+.ins-survey-datepicker ::-webkit-calendar-picker-indicator {
+display: none;
+}
+
+.ins-date-icon{
+width: 18px;
+height: 18px;
+position: absolute;
+right: 15px;
+top: 13px;
+}
+
+.ins-survey-input input{
+width: 100%;
+height: 45px;
+padding: 0 15px;
+font-size: 16px;
+border-radius: 3px !important;
+color:#555;
+border: solid 1px #d4d6d4;
+outline: none!important;
+box-sizing: border-box;
+}
+
+.ins-survey-textarea textarea{
+width: 100%;
+height: 100px;
+padding: 10px 15px;
+font-size: 16px;
+border-radius: 3px !important;
+color:#555;
+border: solid 1px #d4d6d4;
+outline: none!important;
+box-sizing: border-box;
+resize: vertical;
+max-height: 200px;
+min-height: 50px;
+}
+
+.ins-survey-textarea ::placeholder,
+.ins-survey-input ::placeholder{
+color: #c5c5c5;
+}
+
+.ins-preview-wrapper .ins-adaptive-select-wrapper{
+border-radius: 4px !important;
+border: solid 1px #e6e6e6;
+height: 50px;
+position: relative;
+margin-top: 40px
+}
+
+.ins-adaptive-select-container select{
+-webkit-appearance: none;
+height: 50px;
+background-color: transparent;
+width: 100%;
+border: 0;
+outline: none;
+box-sizing: border-box;
+margin-left: 20px;
+font-size: 14px;
+border-radius: 3px!important
+}
+img{
+width:100%;
+margin-bottom:10px;
+}
+.ins-adaptive-select-wrapper:before {
+content: "";
+position: absolute;
+right: 15px;
+top: 15px;
+width: 10px;
+height: 10px;
+border-top: solid 2px #32313c;
+border-right: solid 2px #32313c;
+-webkit-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.ins-survey-linear {
+min-height: 60px;
+max-height: 100px;
+display: flex !important;
+justify-content: space-between;
+align-items: center;
+}
+
+.ins-survey-linear-column {
+width: 25px;
+float: left;
+text-align: center;
+}
+
+.ins-survey-inner-linear {
+margin: 0 20px;
+width: 100%;
+height: 100%;
+display: flex !important;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+.ins-survey-linear-text-label {
+display: inline-block;
+height: 100%;
+width: 45px;
+overflow: hidden;
+text-align: center;
+color: #767575;
+font-size: 13px;
+font-weight: 700;
+}
+
+.ins-survey-linear-radio{
+position: relative;
+width: 20%;
+height: 50px;
+text-align: center;
+}
+
+.ins-survey-linear-radio input{
+visibility: hidden;
+position: absolute;
+display: none !important;
+}
+
+.ins-survey-linear-radio label{
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+z-index: 2;
+font-size: 14px;
+color: #767575;
+}
+.ins-survey-linear > label:first-child,
+.ins-survey-linear > label:last-child {
+display: flex;
+justify-content: center;
+flex-direction: column;
+word-break: break-all;
+}
+
+.ins-survey-linear-radio span.ins-radio-button {
+display: block;
+border: 1px solid #e6e6e6;
+border-radius: 100% !important;
+height: 20px;
+width: 20px;
+margin: 25px auto 0;
+position: relative;
+z-index: 1;
+transition: border .25s linear;
+}
+
+.ins-survey-linear-radio span.ins-radio-button:before {
+display: inline-block;
+content: "";
+border-radius: 100% !important;
+height: 1.1em;
+width: 1.12em;
+transition: background 0.25s linear;
+top: 0.05em;
+position: relative;
+left: 0.05em;
+}
+
+.ins-survey-linear-radio input[type=radio]:checked ~ span.ins-radio-button {
+border: 1px solid #4eb9f6 !important;
+}
+
+.ins-survey-linear-radio input[type=radio]:checked ~ span.ins-radio-button:before {
+background-color: #4eb9f6 !important;
+}
+
+.ins-survey-page-inner-wrapper{
+width: 100%;
+}
+
+.ins-slider-container{
+display: flex!important;
+align-items: center;
+justify-content: center;
+}
+
+.ins-slider-container .ins-survey-page-inner-wrapper{
+margin-top: -99cm;
+}
+.scroll{
+height: 200px;
+overflow-y: scroll;
+}
+.ins-slider-container .ins-element-wrap:only-child .ins-survey-page-inner-wrapper{
+margin-top: 0;
+}
+
+.ins-slider-container .ins-active-slide .ins-survey-page-inner-wrapper{
+margin-top: 0;
+}
+
+.ins-slider-page{
+min-height: 10px;
+}
+
+.ins-survey-coupon-code .editable-coupon {
+height: 40px;
+padding: 10px;
+}
